@@ -1,0 +1,61 @@
+ /* Definir el contenedor principal */
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  /* Cuadrante */
+  #grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Ahora solo 3 columnas */
+    grid-template-rows: repeat(3, 100px); /* Ahora solo 3 filas */
+    gap: 10px; /* Espacio entre las celdas */
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px; /* Celdas más grandes */
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Imagen que se mueve */
+  #image {
+    width: 80px;
+    height: 80px; /* Imagen más grande */
+  }
+
+  /* Botones de control */
+  #controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  /* Tamaño de los botones */
+  button {
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }

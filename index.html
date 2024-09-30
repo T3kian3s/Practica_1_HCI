@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica I</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenedor del cuadrante -->
+  <div id="grid-container">
+    <div id="grid">
+      <!-- Se crean 9 celdas para el cuadrante 3x3 -->
+      <div class="cell" id="cell-0"></div>
+      <div class="cell" id="cell-1"></div>
+      <div class="cell" id="cell-2"></div>
+
+      <div class="cell" id="cell-3"></div>
+      <div class="cell" id="cell-4"></div>
+      <div class="cell" id="cell-5"></div>
+
+      <div class="cell" id="cell-6"></div>
+      <div class="cell" id="cell-7"></div>
+      <div class="cell" id="cell-8"></div>
+    </div>
+  </div>
+
+  <!-- Imagen que se mueve -->
+  <img src="https://th.bing.com/th/id/R.f59823049f9f756cd1035cdba478ac4d?rik=%2fMNSHCconXT1Dw&riu=http%3a%2f%2fimages1.wikia.nocookie.net%2f__cb20100604223617%2fshrek%2fimages%2f8%2f87%2fShrek_fierce.jpg&ehk=p8zy9cnNuydXaZYliSW4hluZutiZ6nUTQkQEq28%2fTvg%3d&risl=&pid=ImgRaw&r=0" id="image">
+
+  <!-- Controles de dirección -->
+  <div id="controls">
+    <div class="control-buttons">
+      <button onclick="moveUp()">↑</button>
+    </div>
+    <div class="control-buttons">
+      <button onclick="moveLeft()">←</button>
+      <button onclick="moveDown()">↓</button>
+      <button onclick="moveRight()">→</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
